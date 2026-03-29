@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт моего папы</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000; /* чёрный фон */
+      color: #ffffff; /* белый текст */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      padding: 20px;
+    }
+    /* Первое фото теперь справа */
+    .photo-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .text {
+      margin: 60px 0 40px 0;
+      font-size: 24px;
+      line-height: 1.6;
+      text-align: left;
+    }
+    .text-long {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .photo-next-text {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .contact-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+    .contact-photo {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .contact-number {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+    @media (max-width: 768px) {
+      .photo-right {
+        width: 150px;
+      }
+      .photo-next-text {
+        width: 200px;
+      }
+      .contact-photo {
+        width: 200px;
+      }
+      .text, .text-long, .contact-number {
+        font-size: 18px;
+      }
+      .text-long {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Фото в правый угол -->
+  <img src="https://www.instagram.com/p/C29IElQtwhj/?igsh=MTljOXJyaG5mcmxrYQ==" alt="Фото 1" class="photo-right">
+
+  <div class="container">
+    <!-- Первый текст -->
+    <div class="text">Более 10 лет опыта работы с многими клиентами</div>
+
+    <!-- Второй текст с фото справа -->
+    <div class="text-long" style="flex-direction: row-reverse;">
+      <img src="https://www.instagram.com/p/CyYinsutxEC/media/?size=l" alt="Фото 2 новый ракурс" class="photo-next-text">
+      <div>
+        Свадьбы<br>
+        Презентации<br>
+        Дни рождения | юбилей<br>
+        Любые мероприятия на ваше усмотрение<br>
+        Тимбилдинги
+      </div>
+    </div>
+
+    <!-- Третий текст с фото и контакт -->
+    <div class="contact-section">
+      <img src="https://www.instagram.com/p/C9ett34tTqz/media/?size=l" alt="Фото 3" class="contact-photo">
+      <div>Все ваши мероприятия пройдут на 100% весело, хорошо и радостно!</div>
+      <div class="contact-number">Номер для связи: +7 775 131 6762</div>
+    </div>
+  </div>
+
+</body>
+</html>
